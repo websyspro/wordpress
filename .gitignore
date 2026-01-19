@@ -1,0 +1,9 @@
+composer.phar
+/vendor/
+
+# remover de src
+/src/upgrade
+/src/languages
+
+# remover composer.lock
+composer.lock

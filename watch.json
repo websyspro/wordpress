@@ -1,0 +1,8 @@
+{
+  "directories": [
+    "src"
+  ],
+  "reload": {
+    "port": 8000
+  }
+}

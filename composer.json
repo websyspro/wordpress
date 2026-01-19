@@ -1,0 +1,24 @@
+{
+    "name": "emerson/wp-engine-test",
+    "autoload": {
+        "psr-4": {
+            "Emerson\\WpEngineTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "e.thiago-pla",
+            "email": "e.thiago-pla@platos.parceirosedu.com.br"
+        }
+    ],
+    "require": {
+        "websyspro/commons": "dev-main",
+        "websyspro/wpengine": "dev-main",
+        "websyspro/devtools": "dev-main"
+    },
+    "extra": {
+        "wordpress": {
+            "version": 6.9
+        }
+    }
+}
