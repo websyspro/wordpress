@@ -1,4 +1,4 @@
-composer.phar
+# rremover vendor
 /vendor/
 
 # remover de src
