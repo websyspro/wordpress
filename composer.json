@@ -1,24 +1,36 @@
 {
-    "name": "emerson/wp-engine-test",
-    "autoload": {
-        "psr-4": {
-            "Emerson\\WpEngineTest\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "e.thiago-pla",
-            "email": "e.thiago-pla@platos.parceirosedu.com.br"
-        }
-    ],
-    "require": {
-        "websyspro/commons": "dev-main",
-        "websyspro/wpengine": "dev-main",
-        "websyspro/devtools": "dev-main"
-    },
-    "extra": {
-        "wordpress": {
-            "version": 6.9
-        }
-    }
+	"name": "websyspro/wordpress",
+	"type": "project",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"Wordpress\\Themes\\": "src/"
+		}
+	},
+	"scripts": {
+		"install-wp": [
+    	"vendor/bin/install"
+		],
+		"post-create-project-cmd": [
+			"@composer dump-autoload",
+			"@install-wp"
+		]
+  },
+	"authors": [
+		{
+			"name": "Emerson Thiago",
+			"email": "websyspro.services@gmail.com"
+		}
+	],
+	"require": {
+		"websyspro/commons": "dev-main",
+		"websyspro/wpengine": "dev-main",
+		"websyspro/devtools": "dev-main"
+	},
+	"extra": {
+		"wordpress": {
+			"version": 6.9
+		}
+	}
 }
