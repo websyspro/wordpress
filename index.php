@@ -8,5 +8,5 @@ define( "PUBLICS", [
   __DIR__ . "/src",
 ]);
 
-require ROUTE_ROOT . "/vendor/autoload.php";
-require ROUTE_ROOT . "/vendor/websyspro/devtools/routers.php";
+require __DIR__ . "/vendor/autoload.php";
+require __DIR__ . "/vendor/websyspro/devtools/router.php";
