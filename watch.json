@@ -3,6 +3,6 @@
     "src"
   ],
   "reload": {
-    "port": 8000
+    "port": 80
   }
 }
