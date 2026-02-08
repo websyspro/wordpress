@@ -26,7 +26,8 @@
 	"require": {
 		"websyspro/commons": "dev-main",
 		"websyspro/wpengine": "dev-main",
-		"websyspro/devtools": "dev-main"
+		"websyspro/devtools": "dev-main",
+		"websyspro/elements": "dev-main"
 	},
 	"extra": {
 		"wordpress": {
