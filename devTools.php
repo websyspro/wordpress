@@ -1,6 +1,5 @@
 <?php
 
-use Websyspro\DevTools\Enums\ErrorReporting;
 use Websyspro\DevTools\Interfaces\DevTools;
 
 require "./vendor/autoload.php";
@@ -12,7 +11,5 @@ return new DevTools(
   httpServerPort: 3001,
   documentRoot: "vendor/websyspro/wpengine/src/Core",
   scriptName: "src/index.php",
-  errorReporting: [
-    ErrorReporting::E_ERROR
-  ],
+  errorReporting: [ E_ERROR ],
 );
