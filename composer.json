@@ -1,7 +1,7 @@
 {
   "name": "websyspro/wordpress",
   "description": "WordPress runtime installer for Composer-based projects",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "project",
   "minimum-stability": "dev",
   "prefer-stable": true,
