@@ -1,37 +1,38 @@
 {
-	"name": "websyspro/wordpress",
-	"type": "project",
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"autoload": {
-		"psr-4": {
-			"Wordpress\\Themes\\": "src/"
-		}
-	},
-	"scripts": {
-		"install-wp": [
-    	"vendor/bin/install"
-		],
-		"post-create-project-cmd": [
-			"@composer dump-autoload",
-			"@install-wp"
-		]
+  "name": "websyspro/wordpress",
+  "description": "WordPress runtime installer for Composer-based projects",
+  "type": "project",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Wordpress\\Themes\\": "src/"
+    }
   },
-	"authors": [
-		{
-			"name": "Emerson Thiago",
-			"email": "websyspro.services@gmail.com"
-		}
-	],
-	"require": {
-		"websyspro/commons": "dev-main",
-		"websyspro/wpengine": "dev-main",
-		"websyspro/devtools": "dev-main",
-		"websyspro/elements": "dev-main"
-	},
-	"extra": {
-		"wordpress": {
-			"version": 6.9
-		}
-	}
+  "scripts": {
+    "install-wp": [
+      "vendor/bin/install"
+    ],
+    "post-create-project-cmd": [
+      "@composer dump-autoload",
+      "@install-wp"
+    ],
+    "publish": "php vendor/bin/publish"
+  },
+  "authors": [
+    {
+      "name": "Emerson Thiago",
+      "email": "websyspro.services@gmail.com"
+    }
+  ],
+  "require": {
+    "websyspro/wpengine": "^1.0",
+    "websyspro/devtools": "^1.0"
+  },
+  "extra": {
+    "wordpress": {
+      "version": 6.9
+    }
+  },
+  "version": "1.0.1"
 }
