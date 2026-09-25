@@ -1,9 +1,13 @@
 # rremover vendor
 /vendor/
+/src/database/
+/src/database/*
+/src/db.php
 
 # remover de src
 /src/upgrade
 /src/languages
+/src/uploads
 
 # remover composer.lock
 composer.lock
