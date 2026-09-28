@@ -1,6 +1,11 @@
 {
   "includes": [ "src" ],
-  "excludes": [ "src/database" ],
+  "excludes": [ 
+    "src/database",
+    "src/languages",
+    "src/upgrade",
+    "src/uploads"
+  ],
   "webSocketHost": "0.0.0.0",
   "webSocketPort": 3002,
   "httpServerPort": 3001,
